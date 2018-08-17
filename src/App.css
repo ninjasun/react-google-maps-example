@@ -2,27 +2,79 @@
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-}
 
-.App-header {
-  background-color: #222;
-  height: 150px;
+.App-header, .App-footer {
+  background-color: #0c2848;
+  height: 200px;
   padding: 20px;
   color: white;
 }
 
-.App-title {
-  font-size: 1.5em;
+.tabs-container{
+  height: 100%;
+  min-height: 500px;
 }
 
-.App-intro {
-  font-size: large;
+.tabs-nav{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 20px 0 20px 0;
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.tabs-nav li a{
+  color: #7e8c9d;
+  position: relative;
+  text-transform: uppercase;
+  font-family: Montserrat,sans-serif;
+  font-weight: 700;
+  letter-spacing: 3px;
+  outline: none;
+}
+
+
+.tabs-nav li a:hover{
+  background-color: transparent;
+}
+
+.tabs-nav li a:hover:after, .tabs-nav li.active a:after, .tabs-nav li a:focus:after{
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 3px;
+    background: #ffc80a;
+    bottom: 0;
+    left: 25%;
+}
+
+.tabs-nav li.active a{
+  color: #0c2848;
+  background-color: transparent;
+}
+
+.icons-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 60px 0 40px 0;
+}
+
+
+.icons-container .icon{
+  flex: 1;
+}
+
+p.info-text {
+  font-size: 20px;
+  font-family: Playfair Display,serif;
+  color: #0c2848;
+  text-align: left;
+}
+
+h6{
+  color: #55697f;
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: Montserrat, sans-serif;
 }
