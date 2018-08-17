@@ -38,7 +38,7 @@ class App extends Component {
 
                   <Tab.Pane eventKey="second">
                     <Row>
-                      <Col xs={12} md={6}>
+                      <Col xs={12} md={6} style={{'height':'350px'}}>
                           <h6 style={{'fontSize': '14px', 'textAlign': 'left', 'textTransform':'uppercase'}}>Address:</h6>
                           
                           <p className="info-text"> Via Sant'Alberto 837, 40018, Bologna, Italy </p>
